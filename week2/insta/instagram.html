@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+    </head>
+
+    <style>
+        body{
+            font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            background: rgb(249, 249, 249);
+            margin: 0px;
+            height: auto;
+        }
+        .box{
+            margin: top 50px;
+            width: min(80vw, 870px);
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+        a{
+            color:inherit;
+            text-decoration: none;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .info{
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+            height: 600px;
+        }
+        #ph{
+            height: 618px;
+            margin-left: 30px;
+        }
+        .login{
+            width: 370px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            margin: 10px 0;
+            background: white;
+            border: 1px #dbdbdb solid;
+        }
+        .form form{
+            box-sizing: border-box;
+            width: 100%;
+            margin: 10px;
+            margin-top:30px;
+            padding: 10px;
+        }
+        #ins{
+            width: 170px;
+        }
+        .form input{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 10px;
+            height: 40px;
+            border-radius: 2px;
+            border: 1px solid #dddfe2;
+            padding: 10px;
+            background-color: #fafafa;
+
+            font-family: inherit;
+            font-size: 14px;
+            color:#1d2129;
+        }
+        .login a {
+            color: #00376b;
+            font-size: 0.7em;
+            margin-bottom: 10px;
+        }
+        .login a[role="button"] {
+            margin: 15px 0;
+            color: #385185;
+            font-size: 0.9em;
+        }
+        .form a[role="button"] img{
+            width: 16px;
+            margin-right: 5px;
+        }
+        .form p a{
+            color: #0095f7;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        .form input::placeholder{
+            color: #90949c;
+        }
+        .login input[type="submit"]{
+            font-size: 15px;
+            color: white;
+            background-color: #0095f6;;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .apps{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .apps p{
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .apps img{
+            width: 130px;
+            margin: 7px;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            background-color: transparent;
+            margin-top: 40px;
+            padding: 20px 0;
+            width: 700px;
+            color: #737373;
+            font-size: 12px;
+            height: auto;
+        }
+        footer ul{
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            padding: 0;
+            line-height: 2em;
+        }
+        footer ul li{
+            display: inline-block;
+            flex-shrink: 0;
+            padding-right: 15px;
+        }
+        footer select{
+            border: 0;
+            color: inherit;
+            background-color: transparent;
+            cursor: pointer;
+            font:inherit;
+            width: 90px;
+            margin-right: 15px;
+        }
+    </style>
+
+    <body>
+        <div class="box">
+            <div class="content">
+                <div class = "info">
+                    <img src="iphone.png" alt = "iphone" id="ph" >
+                </div>
+                <div class="login">
+                    <div class="form">
+                        <img src="inst-logo.png" alt="insta_logo" id = "ins">
+                        <form>
+                            <input type="text" placeholder="Phone number, username or email address">
+                            <input type = "password" placeholder="Password">
+                            <input type="submit" value="Log In">
+                        </form>
+
+                        <a role="button" href="#"><img src="https://image.flaticon.com/icons/png/512/124/124010.png" alt="facebook logo">Log in with Facebook </a>
+                        <a href="">Forgotten your password?</a>
+                    </div>
+                    <div class="form">
+                        <p>
+                            Don't have an account? <a href="">Sign up</a>
+                        </p>
+                    </div>
+                    <div class="apps">
+                        <p>
+                            Get the app.
+                        </p>
+                        <a href=""><img src="app-s.png" alt="App Store"></a>
+                        <a href=""><img src="g-pg.png" alt = "Google Play"></a>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <ul>
+                    <li><a href="">Meta</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">API</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Top accounts</a></li>
+                    <li><a href="">Hashtags</a></li>
+                    <li><a href="">Locations</a></li>
+                    <li><a href="">Instagram Lite</a></li>
+                    <li><a href="">Beauty</a></li>
+                    <li><a href="">Dance</a></li>
+                    <li><a href="">Fitness</a></li>
+                    <li><a href="">Food & drink</a></li>
+                    <li><a href="">Home & garden</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">Visual arts</a></li>
+                </ul>
+                <select>
+                    <option value="Afrikaans">Afrikaans</option>
+                    <option value="Čeština">Čeština</option>
+                    <option value="Dansk">Dansk</option>
+                    <option value="Deutsch">Deutsch</option>
+                    <option value="Ελληνικά">Ελληνικά</option>
+                    <option value="English">English</option>
+                    <option value="English (UK)" selected>English (UK)</option>
+                    <option value="Español (España)">Español (España)</option>
+                    <option value="Español">Español</option>
+                    <option value="Suomi">Suomi</option>
+                    <option value="Français">Français</option>
+                    <option value="ahasa Indonesia">Bahasa Indonesia</option>
+                    <option value="Italiano">Italiano</option>
+                    <option value="日本語">日本語</option>
+                    <option value="한국어">한국어</option>
+                    <option value="Bahasa Melayu">Bahasa Melayu</option>
+                    <option value="Norsk">Norsk</option>
+                    <option value="Nederlands">Nederlands</option>
+                    <option value="Polski">Polski</option>
+                    <option value="Português (Brasil)">Português (Brasil)</option>
+                    <option value="Português (Portugal)">Português (Portugal)</option>
+                    <option value="Русский">Русский</option>
+                    <option value="Svenska">Svenska</option>
+                    <option value="ภาษาไทย">ภาษาไทย</option>
+                    <option value="Filipino">Filipino</option>
+                    <option value="Türkçe">Türkçe</option>
+                    <option value="中文(简体)">中文(简体)</option>
+                    <option value="中文(台灣)">中文(台灣)</option>
+                    <option value="বাংলা">বাংলা</option>
+                    <option value="ગુજરાતી">ગુજરાતી</option>
+                    <option value="हिन्दी">हिन्दी</option>
+                    <option value="Hrvatski">Hrvatski</option>
+                    <option value="Magyar">Magyar</option>
+                    <option value="ಕನ್ನಡ">ಕನ್ನಡ</option>
+                    <option value="മലയാളം">മലയാളം</option>
+                    <option value="मराठी">मराठी</option>
+                    <option value="नेपाली">नेपाली</option>
+                    <option value="ਪੰਜਾਬੀ">ਪੰਜਾਬੀ</option>
+                    <option value="සිංහල">සිංහල</option>
+                    <option value="Slovenčina">Slovenčina</option>
+                    <option value="தமிழ்">தமிழ்</option>
+                    <option value="తెలుగు">తెలుగు</option>
+                    <option value="Tiếng Việt">Tiếng Việt</option>
+                    <option value="中文(香港)">中文(香港)</option>
+                    <option value="Български">Български</option>
+                    <option value="fr-ca">Français (Canada)</option>
+                    <option value="Română">Română</option>
+                    <option value="Српски">Српски</option>
+                    <option value="Українська">Українська</option>
+                </select>
+                <span>
+                        © 2022 Instagram from Meta
+                </span>
+            </footer>
+        </div>
+    </body>
+</html>

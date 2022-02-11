@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook</title>
+    </head>
+    <style>
+        body{
+            font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            background: rgb(239,241,243);
+            margin: 0px;
+            height: auto;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .box{
+            width: min(1000px,90vw);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content{
+            margin: 130px 0;
+        }
+
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info{
+            width: 500px;
+            margin-right: 60px;
+            margin-bottom: 30px;
+        }
+
+        .info h2{
+            font-weight: 400;
+            padding-left: 30px;
+            font-size: 28px
+        }
+
+        .login{
+            flex-direction: column;
+            width: 380px;
+            padding: 16px;
+            background: white;
+            border: 2px rgb(182,182,182);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(206,206,206);
+        }
+
+        .login form {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .login input, .login a[role = "button"]{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            margin:0;
+            margin-bottom: 10px;
+            height: 50px;
+            border-radius: 6px;
+            border: 1px solid #dddfe2;
+            padding: 15px;
+            font-family: inherit;
+            font-size: 17px;
+            color: #1d2129;
+        }
+
+        .login input::placeholder{
+            background-color: white;
+        }
+
+        .login input[type="submit"], .login a[role="button"]{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            background-color: #1877f2;
+            cursor: pointer;
+        }
+
+        .login input[type= "submit"]: hover{
+            background-color: #166ee6;
+        }
+
+        .login a[role="button"]{
+            background-color: #42b72a;
+            width: auto;
+            font-size: 17px;
+        }
+
+        .login a[role="button"]:hover{
+            text-decoration: none;
+            background-color: #39a823;
+        }
+
+        #register-s{
+            text-align: center;
+            width: 380px;
+            margin: 16px;
+            margin-top: 20px;
+            box-sizing: content-box;
+            font-size: 14px;
+            color: #1c1e21;
+        }
+
+        #register-s a{
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: white;
+            padding: 20px 0;
+            color: #737373;
+            font-size: 12px;
+            height: auto;
+        }
+
+        footer ul{
+            padding: 0;
+            line-height: 1.7em;
+        }
+
+        footer ul li{
+            display: inline-block;
+            padding-right: 9px;
+        }
+
+        .line{
+            border-bottom: 1px solid #dadde1;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+
+
+    </style>
+    <body>
+        <div class = "box">
+            <div class="content flex">
+                <div class="info">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" width = 300px>
+                <h2>Facebook helps you connect and share with the people in your life.</h2>
+                </div>
+                <div>
+                    <div class ="login">
+                        <form>
+                            <input type = "text" placeholder = "Email address or phone number" required>
+                            <input type = "password" placeholder = "Password" required>
+                            <input type = "submit" value = "Log In">
+                        </form>
+                        <a style= "color:#1877f2;"> <center>Forgotten password?</center></a>
+                        <div class="line"></div>
+                        <a role="button" href="#"><center>Create New Account</center></a>
+                    </div>
+                    <p id="register-s">
+                        <a>Create a Page</a> for a celebrity, brand or business.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="box">
+                <ul>
+
+                    <li><a href="#"> English</a></li>
+                    <li><a href="#"> Русский</a></li>
+                    <li><a href="#"> Türkçe</a></li>
+                    <li><a href="#"> Bahasa Indonesia</a></li>
+                    <li><a href="#"> 中文(简体)</a></li>
+                    <li><a href="#"> Қазақша</a></li>
+                    <li><a href="#"> Deutsch</a></li>
+                    <li><a href="#"> 한국어</a></li>
+                    <li><a href="#"> Shqip</a></li>
+                    <li><a href="#"> Español</a></li>
+                    <li><a href="#"> Português (Brasil)</a></li>
+                    </ul>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href = "#">Sign Up</a></li>
+                        <li><a href = "#">Log In</a></li>
+                        <li><a href = "#">Messenger</a></li>
+                        <li><a href = "#">Facebook Lite</a></li>
+                        <li><a href = "#">Watch</a></li>
+                        <li><a href = "#">Places</a></li>
+                        <li><a href = "#">Games</a></li>
+                        <li><a href = "#">Marketplace</a></li>
+                        <li><a href = "#">Facebook Pay</a></li>
+                        <li><a href = "#">Oculus</a></li>
+                        <li><a href = "#">Portal</a></li>
+                        <li><a href = "#">Instagram</a></li>
+                        <li><a href = "#">Bulletin</a></li>
+                        <li><a href = "#">Local</a></li>
+                        <li><a href = "#">Fundraisers</a></li>
+                        <li><a href = "#">Services</a></li>
+                        <li><a href = "#">Voting Information Centre</a></li>
+                        <li><a href = "#">Groups</a></li>
+                        <li><a href = "#">About</a></li>
+                        <li><a href = "#">Create ad</a></li>
+                        <li><a href = "#">Create Page</a></li>
+                        <li><a href = "#">Developers</a></li>
+                        <li><a href = "#">Careers</a></li>
+                        <li><a href = "#">Privacy</a></li>
+                        <li><a href = "#">Cookies</a></li>
+                        <li><a href = "#">AdChoices</a></li>
+                        <li><a href = "#">Terms</a></li>
+                        <li><a href = "#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="box">Meta © 2022</div>
+            </footer>
+                        
+    </body>
+</html>
